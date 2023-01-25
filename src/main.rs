@@ -42,5 +42,14 @@ fn main() {
         }
     }
 
+    let mut tent = encryp::tent_chaos::new(0);
+
+    let mut vector: Vec<u64> = Vec::new();
+    vector.resize(1024, 0);
+
+    tent.iterate_vec(1024, &mut vector).unwrap();
+
+    println!("The vector is {:?}", vector);
+
     return;
 }
