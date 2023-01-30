@@ -1,4 +1,4 @@
-use std::{fs, vec};
+use std::fs;
 //use std::io;
 use std::io::prelude::*;
 
@@ -6,7 +6,7 @@ use rand::Rng;
 use sha3::Digest;
 
 #[allow(non_upper_case_globals)]
-pub const suffix: &str = ".rua";
+pub const suffix: &str = ".neko";
 
 #[allow(non_camel_case_types)]
 #[derive(Debug, Clone)]
@@ -111,6 +111,7 @@ fn create_file_stream(
     });
 }
 
+#[allow(non_upper_case_globals)]
 const file_head: [u8; 16] = [
     0,
     0,

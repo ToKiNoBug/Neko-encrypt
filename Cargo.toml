@@ -1,10 +1,10 @@
 [package]
 name = "chaos_encryp4"
-version = "0.1.0"
+version = "0.0.0"
 edition = "2021"
 
 [[bin]]
-name = "chaos-encryp4"
+name = "neko"
 path = "src/main.rs"
 
 [lib]
