@@ -18,7 +18,8 @@ crate-type = ["rlib"]
 
 [dependencies]
 clap = { version = "4.1.1", features = ["derive"] }
-checksums = "0.9.1"
+sha3 = "0.10.6"
+rand = "0.8.5"
 
 [profile.release]
 lto = true
